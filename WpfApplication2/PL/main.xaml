@@ -1,0 +1,91 @@
+﻿<Window x:Class="WpfApplication2.PL.main"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="main"  Height="728.441" Width="1359.045" WindowState="Maximized"   WindowStartupLocation="CenterOwner" WindowStyle="ThreeDBorderWindow" >
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFECBD87" Offset="0"/>
+                <GradientStop Color="#FF0BA89F" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Menu Height="30" VerticalAlignment="Top" >
+            <Menu.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FF0BA89F"/>
+                    <GradientStop Color="#FFECBD87" Offset="1"/>
+                </LinearGradientBrush>
+            </Menu.Background>
+            <MenuItem Header="File" FontSize="14" FontWeight="SemiBold"   >
+                <MenuItem Header="Set Authorization" FontSize="14" FontWeight="SemiBold"  ></MenuItem>
+                <MenuItem Header="Back Up" FontSize="14" FontWeight="SemiBold"  ></MenuItem>
+                <MenuItem Header="Restore" FontSize="14" FontWeight="SemiBold"  ></MenuItem>
+                <MenuItem Header="Log Out" FontSize="14" FontWeight="SemiBold"  ></MenuItem>
+            </MenuItem>
+            <MenuItem Header=" Management" FontSize="14" FontWeight="SemiBold"  >
+
+                <MenuItem Header=" Employee" FontSize="14" FontWeight="SemiBold" >
+                    <MenuItem Header="Employee Management" Click="employee" />
+                    <MenuItem Header="Employee Position Management" Click="position" />
+                    <MenuItem Header="Employee Department Management" Click="adminstration"  />
+                    <MenuItem Header="User Management" FontSize="14" FontWeight="SemiBold" Click="usermng" />
+                </MenuItem>
+                <MenuItem Header="Project Management " FontSize="14" FontWeight="SemiBold"  Click="project"  >
+                  
+                </MenuItem>
+                <MenuItem Header="Items Management" FontSize="14" FontWeight="SemiBold"  >
+                    <MenuItem Header="Items Management"  Click="itemsmng"/>
+                    <MenuItem Header="Units Management" Click="unitmng"/>
+                    <MenuItem Header="Delete" />
+                </MenuItem>
+               
+                <MenuItem Header="Store Management" FontSize="14" FontWeight="SemiBold" Click="storemng" >
+                
+                </MenuItem>
+                <MenuItem Header="Manage Category" FontSize="14" FontWeight="SemiBold" Click="catmng"    />      
+             
+                 
+              
+
+            </MenuItem>
+            <MenuItem Header=" Transactions" FontSize="14" FontWeight="SemiBold"  >
+                <MenuItem Header=" Sale" FontSize="14" FontWeight="SemiBold" />
+                <MenuItem Header=" Purchase" FontSize="14" FontWeight="SemiBold"  />
+                <MenuItem Header=" Sale" FontSize="14" FontWeight="SemiBold" />
+                <MenuItem Header=" Purchase" FontSize="14" FontWeight="SemiBold"  />
+            </MenuItem>
+            <MenuItem Header=" Report" FontSize="14" FontWeight="SemiBold" >
+                <MenuItem Header=" Sales" FontSize="14" FontWeight="SemiBold"   ></MenuItem>
+                <MenuItem Header=" Purchase" FontSize="14" FontWeight="SemiBold" ></MenuItem>
+
+                <MenuItem Header=" Employee" FontSize="14" FontWeight="SemiBold" />
+
+                <MenuItem Header=" Customer" FontSize="14" FontWeight="SemiBold"  ></MenuItem>
+                <MenuItem Header=" Company" FontSize="14" FontWeight="SemiBold"  ></MenuItem>
+                <MenuItem Header=" Product" FontSize="14" FontWeight="SemiBold" ></MenuItem>
+                <MenuItem Header=" Store" FontSize="14" FontWeight="SemiBold"  ></MenuItem>
+                <MenuItem Header=" Category" FontSize="14" FontWeight="SemiBold"  ></MenuItem>
+                <MenuItem Header="Item Type" FontSize="14" FontWeight="SemiBold"  ></MenuItem>
+                <MenuItem Header="Employee Position" FontSize="14" FontWeight="SemiBold"  ></MenuItem>
+
+            </MenuItem>
+            <MenuItem Header=" Help" FontSize="14" FontWeight="SemiBold"  ></MenuItem>
+            
+
+
+        </Menu>
+        <StatusBar Margin="0,670,0,0">
+            <StatusBar.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF0BA89F" Offset="0"/>
+                    <GradientStop Color="#FFECBD87" Offset="1"/>
+                </LinearGradientBrush>
+            </StatusBar.Background>
+
+            <TextBlock Name="DT" FontSize="14" ></TextBlock>
+            <TextBlock Name="MN" Margin="400,0,200,0" FontSize="14"   ></TextBlock>
+            <TextBlock Name="EN" Margin="150,0,0,0" FontSize="14" ></TextBlock>
+        </StatusBar>
+
+    </Grid>
+</Window>
